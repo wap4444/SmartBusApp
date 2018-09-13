@@ -5,21 +5,12 @@
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
- id        = "kz.smartpavlodar"
-      version   = "0.0.8">
+ id        = "kz.elecor"
+      version   = "2.5">
 
-    <name>Smart Pavlodar</name>
+    <name>Elecor</name>
 
     <description>
-«SMART Павлодар» - это многофункциональная мобильная система
-направленная на разрешении социальных вопросов и задач, значительно
-упрощающая и систематизирующая многие аспекты деловой и общественной
-жизни горожан. Система создана для прямого диалога с государственными
-структурами города и области и включает в себя тринадцать основных
-разделов: «ГАИ», «Налоговая», «Умный Дом», «Туризм и Спорт»,
-«Справочник», «Общественный транспорт», «Образование», «Миграционная
-полиция», «Глас Народа», «Курсы валют», «Новости», «Афиша», и
-«Уведомления».
       </description>
 
     <author href="http://phonegap.com" email="elegant4444@gmail.com">
@@ -43,19 +34,12 @@ MaksimMorozov
     <!-- Core plugins -->
 <plugin name="cordova-plugin-device" spec="1.1.6" />
 <plugin name="cordova-plugin-device-orientation" spec="1.0.7" />
-<!--<plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />-->
-<plugin spec="https://github.com/jverlee/cordova-plugin-inappbrowser-camera.git" version="1.1.0" source="git" />
+<plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
 <plugin name="cordova-plugin-network-information" spec="1.2.1" />
 <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
 <plugin name="onesignal-cordova-plugin"  source="npm" />
       
-<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
-     <string>Загрузка изображений в "Smart Павлодар"</string>
-</gap:config-file>
-<gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription" overwrite="true">
-    <string>Загрузка изображений в "Smart Павлодар"</string>
-</gap:config-file>
-  
+
 
 <!-- Recommend the newest cli but requires cli-5.1.1+ and gradle for Android. -->
 <!-- If the below settings are not compatible with your project set the "PGB ANT" version above. -->
