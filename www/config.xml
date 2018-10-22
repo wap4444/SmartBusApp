@@ -24,11 +24,11 @@
 
     <icon src="www/res/icon/ios/1024.png" />
     <platform name="android">
-     	<icon src="www/res/icon/android/drawable-mdpi-icon.png" density="mdpi" />
-     	<icon src="www/res/icon/android/drawable-hdpi-icon.png" density="hdpi" />
-     	<icon src="www/res/icon/android/drawable-xhdpi-icon.png" density="xhdpi" />
-     	<icon src="www/res/icon/android/drawable-xxhdpi-icon.png" density="xxhdpi" />
-     	<icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" density="xxxhdpi" />
+     	<icon src="www/res/icon/android/mdpi_ic_launcher.png" density="mdpi" />
+     	<icon src="www/res/icon/android/hdpi_ic_launcher.png" density="hdpi" />
+     	<icon src="www/res/icon/android/xhdpi_ic_launcher.png" density="xhdpi" />
+     	<icon src="www/res/icon/android/xxhdpi_ic_launcher.png" density="xxhdpi" />
+     	<icon src="www/res/icon/android/xxxhdpi_ic_launcher.png" density="xxxhdpi" />
           
         <splash src="www/res/screen/android/drawable-land-ldpi-screen.png"      density="land-ldpi" />
         <splash src="www/res/screen/android/drawable-land-mdpi-screen.png"      density="land-mdpi" />
