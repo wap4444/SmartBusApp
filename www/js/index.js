@@ -16,13 +16,13 @@ ref.close();
 document.addEventListener("online", onOnline, false);
  
 function onOnline() {
-var ref = cordova.InAppBrowser.open('http://smartbus.controlsoft.kz/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://alexey.smart-pavlodar.kz/Employees/app/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 }
 if(localStorage.ipush){}
 else{}
 
 $("#BtnEnt" ).click(function() {
-var ref = cordova.InAppBrowser.open('http://smartbus.controlsoft.kz/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://alexey.smart-pavlodar.kz/Employees/app/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 });
         
 function didReceiveRemoteNotificationCallBack(jsonData) {}
@@ -36,7 +36,7 @@ var ref = cordova.InAppBrowser.open(jsonData.notification.payload.additionalData
         iosSettings["kOSSettingsKeyInAppLaunchURL"] = true;
         //ПОДКЛЮЧЕНИЕ ПУШЕЙ 
            window.plugins.OneSignal
-          .startInit("52fd2532-f4de-48bd-a818-c918662346cd")
+          .startInit("dbd68e9e-2267-4f89-b571-15a43bf95477")
           .handleNotificationReceived(didReceiveRemoteNotificationCallBack)
 	  .handleNotificationOpened(didOpenRemoteNotificationCallBack)
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
@@ -45,7 +45,7 @@ var ref = cordova.InAppBrowser.open(jsonData.notification.payload.additionalData
 window.plugins.OneSignal.getIds(function(ids) {
 ipush = ids.userId;
 localStorage.ipush=ipush;
-var ref = cordova.InAppBrowser.open('http://smartbus.controlsoft.kz/?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://alexey.smart-pavlodar.kz/Employees/app/?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 });
     }
 };
