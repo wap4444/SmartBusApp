@@ -16,7 +16,6 @@ ref.close();
 document.addEventListener("online", onOnline, false);
  
 function onOnline() {
-var ref = cordova.InAppBrowser.open('http://alexey.smart-pavlodar.kz/Employees/app/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 }
 if(localStorage.ipush){}
 else{}
