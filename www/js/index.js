@@ -26,7 +26,6 @@ var ref = cordova.InAppBrowser.open('http://alexey.smart-pavlodar.kz/Employees/a
         
 function didReceiveRemoteNotificationCallBack(jsonData) {}
 function didOpenRemoteNotificationCallBack(jsonData) {
-alert('PUSH'+jsonData.notification.payload.additionalData.ssylka);
 var ref = cordova.InAppBrowser.open(jsonData.notification.payload.additionalData.ssylka, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 }     
         //Настройка ПУШЕЙ ДЛЯ АЙФОНА
